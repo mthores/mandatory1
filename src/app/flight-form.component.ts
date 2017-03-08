@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-flight-form',
@@ -6,8 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['Styles/css/flight-form.component.css']
 })
 export class FlightFormComponent implements OnInit {
+  private flightForm: FormGroup;
 
-  constructor() { }
+  constructor(fb: FormBuilder) {
+    this.flightForm = fb.group({
+      'type': ['', Validators.required],
+      'departurecity': ['', Validators.required],
+      'destinationcity': ['', Validators.required],
+      'departuredate': ['', Validators.required],
+      'arrivaldate': ['', Validators.required],
+      'passengers': ['', Validators.required]
+    
+    })
+  }
+
+  submitFlightForm(flightForm): void {
+    console.log(flightForm);
+  }
 
   ngOnInit() {
   }
