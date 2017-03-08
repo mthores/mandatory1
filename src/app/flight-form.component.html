@@ -1,4 +1,31 @@
 <div id="flight-form" class="container">
+
+<form [formGroup]="flightForm" (ngSubmit)="submitFlightForm(flightForm.value)">
+
+  <div class="form-group">
+      <input type="radio"  class="form-control" name="type" value="return" id="type" required formControlName="type" > Return
+      <input type="radio"  class="form-control" name="type" value="one way" id="type" required formControlName="type" > One Way
+  </div>
+
+  <div class="form-group">
+      <input type="text" class="form-control" placeholder="Departure City" id="departurecity" required formControlName="departurecity">
+  </div>
+
+  <div class="form-group">
+      <input type="text" class="form-control" placeholder="Destination City" id="destinationcity" required formControlName="destinationcity">
+  </div>
+
+  <div class="form-group">
+      <input type="date" class="form-control" id="departuredate" required formControlName="departuredate">
+  </div>
+
+  <div class="form-group"> 
+      <input type="date" class="form-control" id="arrivaldate" required formControlName="arrivaldate">
+  </div>
+
+  <div class="form-group">
+      <select class="form-control" id="passengers" required formControlName="passengers">
+=======
   <form action="">
     <div id="radio-buttons" class="radio-buttons">
       <input type="radio" name="type" value="return"> Return
@@ -10,14 +37,17 @@
       <input type="date" >
       <input type="date">
       <select>
+>>>>>>> d039fe4d905e32301df04618b8a5547fcc15c0d0
         <option selected disabled value="Passengers">Passengers</option>
         <option value="Adult">Adult</option>
         <option value="Teen">Teen</option>
         <option value="Children">Children</option>
         <option value="Infants">Infants</option>
       </select>
-      <input type="submit" value="GO!">
-    </div>
-  </form>
+  </div>  
+
+  <button type="submit"> Submit </button>
+
+</form>
 
 </div>
