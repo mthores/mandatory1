@@ -1,43 +1,36 @@
-<div id="flight-form" class="container">
-
+<div class="content">
   <form [formGroup]="flightForm" (ngSubmit)="submitFlightForm(flightForm.value)">
 
-    <div class="form-group">
-      <input type="radio" class="form-control" name="type" value="return" id="type" required formControlName="type">
-      Return
-      <input type="radio" class="form-control" name="type" value="one way" id="type" required formControlName="type">
-      One Way
+    <div class="container">
+        <input id="radio-buttons" type="radio" class="form-control" name="type" value="return" id="type" required formControlName="type"> Return
+        <input type="radio" class="form-control" name="type" value="one way" id="type" required formControlName="type"> One Way
     </div>
 
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Departure City" id="departurecity" required
-             formControlName="departurecity">
-    </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Departure City" id="departurecity" required formControlName="departurecity">
+      </div>
 
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Destination City" id="destinationcity" required
-             formControlName="destinationcity">
-    </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Destination City" id="destinationcity" required formControlName="destinationcity">
+      </div>
 
-    <div class="form-group">
-      <input type="date" class="form-control" id="departuredate" required formControlName="departuredate">
-    </div>
+      <div class="form-group">
+        <input type="date" class="form-control" id="departuredate" required formControlName="departuredate">
+      </div>
 
-    <div class="form-group">
-      <input type="date" class="form-control" id="arrivaldate" required formControlName="arrivaldate">
-    </div>
+      <div class="form-group">
+        <input type="date" class="form-control" id="arrivaldate" required formControlName="arrivaldate">
+      </div>
 
-    <div class="form-group">
-      <select class="form-control" id="passengers" required formControlName="passengers">
-        <option selected disabled value="Passengers">Passengers</option>
-        <option value="Adult">Adult</option>
-        <option value="Teen">Teen</option>
-        <option value="Children">Children</option>
-        <option value="Infants">Infants</option>
-      </select>
-    </div>
-
-    <button type="submit"> Submit</button>
-
+      <div class="form-group">
+        <select class="form-control" id="passengers" required formControlName="passengers">
+          <option selected disabled value="Passengers">Passengers</option>
+          <option value="Adult">Adult</option>
+          <option value="Teen">Teen</option>
+          <option value="Children">Children</option>
+          <option value="Infants">Infants</option>
+        </select>
+      </div>
+      <input class="button" type="button" value="Go!">
   </form>
 </div>
