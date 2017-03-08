@@ -9,6 +9,24 @@ body {
 .content {
   padding: 30px; }
 
+* {
+  box-sizing: border-box; }
+
+.container {
+  margin: 0 auto;
+  width: 850px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: lightblue; }
+
+#radio-buttons {
+  margin: 20px; }
+
+input {
+  margin-left: 10px;
+  text-align: center;
+  padding: 10px; }
+
 .nav-main > .left, .nav-main > .right {
   margin: 0;
   padding: 0;

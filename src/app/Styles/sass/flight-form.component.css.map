@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAAA,CAAC;EACC,UAAU,EAAE,UAAU;;AAGxB,UAAW;EACT,MAAM,EAAE,MAAM;EACd,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,eAAe;EACvB,gBAAgB,EAAE,SAAS;;AAG7B,cAAe;EACb,MAAM,EAAE,IAAI;;AAGd,KAAM;EACJ,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,IAAI",
-"sources": ["../sass/flight-form.component.scss"],
+"sources": ["flight-form.component.scss"],
 "names": [],
 "file": "flight-form.component.css"
 }
