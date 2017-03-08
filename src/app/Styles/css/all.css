@@ -1,3 +1,14 @@
+body, html {
+  margin: 0; }
+
+body {
+  background-image: url("https://cdn.thecrazytourist.com/wp-content/uploads/2015/08/Prague-Castle.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center; }
+
+.content {
+  padding: 30px; }
+
 .nav-main > .left, .nav-main > .right {
   margin: 0;
   padding: 0;
@@ -35,4 +46,4 @@
     background-color: #444;
     cursor: pointer; }
 
-/*# sourceMappingURL=nav-bar.component.css.map */
+/*# sourceMappingURL=all.css.map */
