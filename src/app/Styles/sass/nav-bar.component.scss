@@ -1,0 +1,65 @@
+//Variables
+$font-family: "Open Sans", sans-serif;
+$font-size: 1em;
+
+$nav-background-color: #222;
+$nav-foreground-color: #fff;
+$nav-hover-color: #444;
+
+//Placeholders
+%plainlist {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+//Navbar
+.nav-main{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $nav-background-color;
+    height: 50px;
+    color: $nav-foreground-color;
+
+    .logo{
+        float: left;
+        height: 40px;
+        padding: 15px 30px;
+        font-size: 1.4em;
+        line-height: 20px;
+    }
+
+    > .left {
+        @extend %plainlist;
+        float: left;
+
+        > li {
+           float: left; 
+        }
+    }
+
+    > .right {
+        @extend %plainlist;
+        float: right;
+
+        > li {
+           float: right; 
+        }
+    }
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 15px 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+
+    &:hover{
+        background-color: $nav-hover-color;
+        cursor: pointer;
+    }
+
+
+}
