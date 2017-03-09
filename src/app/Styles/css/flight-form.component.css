@@ -23,6 +23,14 @@ input[type="text"], [type="date"], select {
   height: 20px;
   line-height: 50px; }
 
+select {
+  border: none;
+  font-size: 14px;
+  height: 40px;
+  padding: 5px;
+  /* If you add too much padding here, the options won't show in IE */
+  width: 100px; }
+
 .button {
   background-color: whitesmoke;
   border: none;
