@@ -35,7 +35,7 @@ input[type="text"], [type="date"], select {
   height: 20px;
   line-height: 50px; }
   input[type="text"]:disabled, [type="date"]:disabled, select:disabled {
-    background-color: rgba(211, 222, 211, 0.8); }
+    background-color: rgba(211, 222, 211, 0.5); }
 
 .validation-alert {
   background-color: rgba(252, 115, 115, 0.9);
@@ -58,7 +58,7 @@ select {
   width: 100px; }
 
 .button {
-  background-color: #90A4AE;
+  background-color: rgba(56, 159, 229, 0.804);
   border: none;
   color: black;
   padding: 11px 20px;
@@ -70,10 +70,10 @@ select {
   cursor: pointer;
   border-radius: 5px; }
   .button:disabled {
-    background-color: rgba(211, 222, 211, 0.8);
+    background-color: rgba(211, 222, 211, 0.5);
     color: #90A4AE; }
-  .button:hover {
-    background-color: #8198a3; }
+  .button:hover:enabled {
+    background-color: rgba(21, 105, 162, 0.804); }
 
 #destinationcity {
   margin-right: 10px; }

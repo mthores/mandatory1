@@ -8,7 +8,7 @@ import { FlightValidator } from './flight.validators';
   styleUrls: ['Styles/css/flight-form.component.css']
 })
 export class FlightFormComponent implements OnInit {
-  flightForm: FormGroup;
+  private flightForm: FormGroup;
 
   constructor(fb: FormBuilder) {
     this.flightForm = fb.group({
@@ -19,7 +19,7 @@ export class FlightFormComponent implements OnInit {
       //'returndate': ['', Validators.required],
       'tickettype': ['', Validators.required]
     
-    });
+    })
   }
 
   submitFlightForm(flightForm): void {

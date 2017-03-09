@@ -36,7 +36,7 @@ input[type="text"], [type="date"], select {
   line-height: 50px;
 
   &:disabled{
-        background-color: rgba(82.7%, 87.2%, 82.7%, 0.8);
+        background-color: rgba(82.7%, 87.2%, 82.7%, 0.5);
     }
 }
 
@@ -63,7 +63,7 @@ select {
 }
 
 .button {
-  background-color: #90A4AE;
+  background-color:rgba(21.9%, 62.4%, 89.8%, 0.804);
   border: none;
   color: black;
   padding: 11px 20px;
@@ -76,12 +76,12 @@ select {
   border-radius: 5px;
 
   &:disabled{
-        background-color: rgba(82.7%, 87.2%, 82.7%, 0.8);
+        background-color: rgba(82.7%, 87.2%, 82.7%, 0.5);
         color: #90A4AE;
     }
 
-  &:hover{
-        background-color: darken( #90A4AE, 5%);
+  &:hover:enabled{
+        background-color: darken(rgba(21.9%, 62.4%, 89.8%, 0.804), 20%);
   }  
 }
 
