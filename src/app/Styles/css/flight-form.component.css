@@ -1,20 +1,28 @@
 .content {
   margin: 250px auto;
-  width: 840px;
-  height: 100%;
-  border: 1px solid black;
-  background-color: rgba(211, 222, 211, 0.8);
+  width: 1110px;
+  height: 150px;
+  background-color: rgba(211, 222, 211, 0.9);
   border-radius: 5px; }
 
 .flight-row {
   display: inline-block; }
 
 .form-group {
+  padding-top: 25px;
   float: left; }
 
 .container {
   margin-bottom: 15px;
   font-size: 15px; }
+
+.container {
+  height: 50px;
+  width: 200px;
+  padding: 0; }
+
+.container label {
+  font-size: 18px; }
 
 input[type="text"], [type="date"], select {
   color: inherit;
@@ -26,7 +34,8 @@ input[type="text"], [type="date"], select {
   font-size: 15px;
   max-width: 130px;
   height: 20px;
-  line-height: 50px; }
+  line-height: 50px;
+  border-radius: 5px; }
   input[type="text"]:disabled, [type="date"]:disabled, select:disabled {
     background-color: rgba(211, 222, 211, 0.5); }
 
