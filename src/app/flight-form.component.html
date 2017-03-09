@@ -15,11 +15,11 @@
       </div>
 
       <div class="form-group">
-        <input type="date" class="form-control" id="departuredate" required formControlName="departuredate">
+        <input type="text" class="form-control" id="departuredate" required formControlName="departuredate" placeholder="Date of Departure" onfocus="(this.type='date')" onblur="(this.type='text')"  > 
       </div>
 
       <div class="form-group">
-        <input type="date" class="form-control" id="arrivaldate" required formControlName="arrivaldate">
+        <input type="text" class="form-control" id="arrivaldate" required formControlName="arrivaldate" placeholder="Date of Arrival" onfocus="(this.type='date')" onblur="(this.type='text')"  > 
       </div>
 
       <div class="form-group">
@@ -31,6 +31,8 @@
           <option value="Infants">Infants</option>
         </select>
       </div>
-      <input class="button" type="button" value="Go!">
+
+      <button type="submit" class="button">Go! </button>
+      <!--<input class="button" type="button" value="Go!">-->
   </form>
 </div>
