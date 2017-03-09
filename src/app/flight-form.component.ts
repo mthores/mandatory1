@@ -19,8 +19,8 @@ export class FlightFormComponent implements OnInit {
       'destinationcity': ['', [Validators.required, FlightValidator.getOnlyCharValidator()]],
       'departuredate': ['', Validators.required],
       'returndate': ['', Validators.required],
-      'tickettype': ['', Validators.required]
-    
+      'tickettype': ['', Validators.required],
+      'passengers': ['', Validators.required],
     })
   }
 
