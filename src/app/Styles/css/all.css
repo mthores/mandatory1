@@ -1,15 +1,9 @@
-body, html {
-  margin: 0; }
-
-body {
-  background-image: url("https://cdn.thecrazytourist.com/wp-content/uploads/2015/08/Prague-Castle.jpg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-size: cover;
-  bacground-position: center; }
-
-.content {
-  padding: 30px; }
+.bottom {
+  background-color: #222;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  position: fixed; }
 
 .content {
   margin: 250px auto;
@@ -18,9 +12,16 @@ body {
   background-color: rgba(211, 222, 211, 0.9);
   border-radius: 5px; }
 
+.flight-row {
+  display: inline-block; }
+
 .form-group {
   padding-top: 25px;
   float: left; }
+
+.container {
+  margin-bottom: 15px;
+  font-size: 15px; }
 
 .container {
   height: 50px;
@@ -37,34 +38,62 @@ input[type="text"], [type="date"], select {
   text-align: center;
   padding: 10px;
   border: 0;
-  font-size: 14px;
-  height: 25px;
+  font-size: 15px;
+  max-width: 130px;
+  height: 20px;
   line-height: 50px;
   border-radius: 5px; }
   input[type="text"]:disabled, [type="date"]:disabled, select:disabled {
-    background-color: rgba(211, 222, 211, 0.8); }
+    background-color: rgba(211, 222, 211, 0.5); }
+
+.validation-alert {
+  background-color: rgba(252, 115, 115, 0.9);
+  color: black;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 15px;
+  text-align: center;
+  max-width: 130px;
+  border-radius: 5px; }
 
 select {
   border: none;
   font-size: 14px;
-  height: 45px;
+  height: 40px;
   padding: 5px;
   /* If you add too much padding here, the options won't show in IE */
-  width: 150px; }
+  width: 100px; }
 
 .button {
-  background-color: whitesmoke;
+  background-color: rgba(56, 159, 229, 0.804);
   border: none;
   color: black;
-  padding: 13px 40px;
+  padding: 11px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius: 5px;
-  margin-left: 3px;
-  margin-top: 26px;
-  cursor: pointer; }
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px; }
+  .button:disabled {
+    background-color: rgba(211, 222, 211, 0.5);
+    color: #90A4AE; }
+  .button:hover:enabled {
+    background-color: rgba(21, 105, 162, 0.804); }
+
+#destinationcity {
+  margin-right: 10px; }
+
+#returndate {
+  margin-right: 10px; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px; }
 
 .nav-main > .left, .nav-main > .right {
   margin: 0;
