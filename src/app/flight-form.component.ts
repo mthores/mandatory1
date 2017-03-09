@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 import { FlightValidator } from './flight.validators';
 
+
+
 @Component({
   selector: 'app-flight-form',
   templateUrl: './flight-form.component.html',
@@ -16,9 +18,9 @@ export class FlightFormComponent implements OnInit {
       'departurecity': ['', [Validators.required, FlightValidator.getOnlyCharValidator()]],
       'destinationcity': ['', [Validators.required, FlightValidator.getOnlyCharValidator()]],
       'departuredate': ['', Validators.required],
-      //'returndate': ['', Validators.required],
-      'tickettype': ['', Validators.required]
-    
+      'returndate': ['', Validators.required],
+      'tickettype': ['', Validators.required],
+      'passengers': ['', Validators.required]
     })
   }
 
