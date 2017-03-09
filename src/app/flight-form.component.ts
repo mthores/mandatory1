@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
+import { FlightValidator } from './flight.validators';
+
 
 
 @Component({
@@ -13,10 +15,10 @@ export class FlightFormComponent implements OnInit {
   constructor(fb: FormBuilder) {
     this.flightForm = fb.group({
       'type': ['', Validators.required],
-      'departurecity': ['', Validators.required],
+      'departurecity': ['', [Validators.required, FlightValidator.getOnlyCharValidator()]],
       'destinationcity': ['', Validators.required],
       'departuredate': ['', Validators.required],
-      'arrivaldate': ['', Validators.required],
+      'returndate': ['', Validators.required],
       'tickettype': ['', Validators.required]
     
     })
