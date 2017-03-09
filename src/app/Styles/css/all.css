@@ -35,6 +35,8 @@ input[type="text"], [type="date"], select {
   font-size: 12px;
   height: 20px;
   line-height: 50px; }
+  input[type="text"]:disabled, [type="date"]:disabled, select:disabled {
+    background-color: rgba(211, 222, 211, 0.8); }
 
 select {
   border: none;

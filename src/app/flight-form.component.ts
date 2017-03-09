@@ -16,7 +16,7 @@ export class FlightFormComponent implements OnInit {
     this.flightForm = fb.group({
       'type': ['', Validators.required],
       'departurecity': ['', [Validators.required, FlightValidator.getOnlyCharValidator()]],
-      'destinationcity': ['', Validators.required],
+      'destinationcity': ['', [Validators.required, FlightValidator.getOnlyCharValidator()]],
       'departuredate': ['', Validators.required],
       'returndate': ['', Validators.required],
       'tickettype': ['', Validators.required]
