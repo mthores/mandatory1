@@ -25,7 +25,8 @@ export class FlightFormComponent implements OnInit {
   }
 
   submitFlightForm(flightForm): void {
-    console.log(flightForm);
+    console.log(flightForm.value);
+    flightForm.reset();
   }
 
   ngOnInit() {
