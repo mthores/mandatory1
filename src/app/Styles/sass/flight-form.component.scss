@@ -1,12 +1,9 @@
-
-
 .content {
   margin: 250px auto;
-  width: 1110px;
+  width: 1120px;
   height: 150px;
-
-  background-color: rgba(82.7%, 87.2%, 82.7%, 0.9);
-  //background-color: rgba(80%,90%,60%,0.9);
+  //background-color: rgba(82.7%, 87.2%, 82.7%, 0.9);
+  background-color: rgba(64, 93, 153, 0.8);
   border-radius: 5px;
 }
 
@@ -17,11 +14,10 @@
 .form-group{
   padding-top: 25px;
   float: left;
-
 }
 
 .container{
-  margin-bottom: 15px;
+
   font-size: 15px;
 }
 
@@ -33,6 +29,7 @@
 
 .container label {
   font-size: 18px;
+  color: white;
 }
 
 input[type="text"], [type="date"], select {
@@ -43,7 +40,8 @@ input[type="text"], [type="date"], select {
   padding: 10px;
   border: 0;
   font-size: 15px;
-  max-width: 130px;
+  max-width: 150px;
+  min-width: 150px;
   height: 20px;
   line-height: 50px;
   border-radius: 5px;
@@ -76,15 +74,16 @@ select {
 }
 
 .button {
-  background-color:rgba(21.9%, 62.4%, 89.8%, 0.804);
+  background-color: rgba(63, 229, 14, 0.8);
   border: none;
   color: black;
-  padding: 11px 20px;
+  padding: 11px 35px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin-left: 10px;
+  margin-top: 26px;
   cursor: pointer;
   border-radius: 5px;
 
@@ -94,17 +93,18 @@ select {
     }
 
   &:hover:enabled{
-        background-color: darken(rgba(21.9%, 62.4%, 89.8%, 0.804), 20%);
+        //background-color: darken(rgba(21.9%, 62.4%, 89.8%, 0.804), 20%);
+    background-color: forestgreen;
   }
 }
 
-#destinationcity {
-  margin-right: 10px;
-}
-
-#returndate {
-  margin-right: 10px;
-}
+//#destinationcity {
+//  margin-right: 10px;
+//}
+//
+//#returndate {
+//  margin-right: 10px;
+//}
 
 //Works for chrome
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */

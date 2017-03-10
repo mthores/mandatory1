@@ -7,9 +7,9 @@
 
 .content {
   margin: 250px auto;
-  width: 1110px;
+  width: 1120px;
   height: 150px;
-  background-color: rgba(211, 222, 211, 0.9);
+  background-color: rgba(64, 93, 153, 0.8);
   border-radius: 5px; }
 
 .flight-row {
@@ -20,7 +20,6 @@
   float: left; }
 
 .container {
-  margin-bottom: 15px;
   font-size: 15px; }
 
 .container {
@@ -29,7 +28,8 @@
   padding: 0; }
 
 .container label {
-  font-size: 18px; }
+  font-size: 18px;
+  color: white; }
 
 input[type="text"], [type="date"], select {
   color: inherit;
@@ -39,7 +39,8 @@ input[type="text"], [type="date"], select {
   padding: 10px;
   border: 0;
   font-size: 15px;
-  max-width: 130px;
+  max-width: 150px;
+  min-width: 150px;
   height: 20px;
   line-height: 50px;
   border-radius: 5px; }
@@ -67,28 +68,23 @@ select {
   width: 100px; }
 
 .button {
-  background-color: rgba(56, 159, 229, 0.804);
+  background-color: rgba(63, 229, 14, 0.8);
   border: none;
   color: black;
-  padding: 11px 20px;
+  padding: 11px 35px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin-left: 10px;
+  margin-top: 26px;
   cursor: pointer;
   border-radius: 5px; }
   .button:disabled {
     background-color: rgba(211, 222, 211, 0.5);
     color: #90A4AE; }
   .button:hover:enabled {
-    background-color: rgba(21, 105, 162, 0.804); }
-
-#destinationcity {
-  margin-right: 10px; }
-
-#returndate {
-  margin-right: 10px; }
+    background-color: forestgreen; }
 
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
