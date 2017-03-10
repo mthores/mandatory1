@@ -4,7 +4,6 @@ export class FlightValidator {
     static getOnlyCharValidator() {
         return function(control: FormControl) {
             // Custom code
-            console.log(control);
             if(control.value && !control.value.match(/^[A-Za-z æÆøØåÅ]+$/)){
                 return { 'charError': true};
             }

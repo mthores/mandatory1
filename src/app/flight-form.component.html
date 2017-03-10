@@ -41,11 +41,13 @@
 
     <div class="form-group">
 
-      <input [disabled]="flightForm.controls.type.value=='oneway'" type="text" class="form-control" id="returndate"
+      <input *ngIf="flightForm.controls.type.value=='oneway'" disabled type="text" class="form-control" id="returndate"
              required formControlName="returndate" placeholder="Date of Return"
              onfocus="(this.type='date')" onblur="(this.type='text')">
-      <!--<input type="text" class="form-control" id="returndate"  required formControlName="returndate" placeholder="Date of Return"
-        onfocus="(this.type='date')" onblur="(this.type='text')">  -->
+     
+      <input *ngIf="flightForm.controls.type.value!='oneway'" type="text" class="form-control" id="returndate"
+             required formControlName="returndate" placeholder="Date of Return"
+             onfocus="(this.type='date')" onblur="(this.type='text')">
     </div>
 
 
@@ -74,7 +76,7 @@
       </select>
     </div>
 
-    <button [disabled]="flightForm.invalid" type="submit" class="button">Go!</button>
-    <!--<input class="button" type="button" value="Go!">-->
+    <button  type="submit" class="button">Go!</button>
+    
   </form>
 </div>
